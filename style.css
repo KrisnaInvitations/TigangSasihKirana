@@ -1,0 +1,287 @@
+:root{
+    --bg: #0a0a0a;
+    --coklat: #995b2f;
+    --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+}
+
+body{
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', sans-serif;
+    min-height: 2500px;
+    
+}
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffffff, #b18667);
+
+}
+
+.hero h4, .hero p{
+    color: #0a0a0a;
+    
+}
+
+.hero h1{
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+    color: var(--coklat)
+}
+
+
+.hero h4{
+    font-size: 1.4rem;
+}
+
+.hero p {
+    font-size: 1.4rem;
+}
+
+.hero a{
+    color: var(--coklat);
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.hero a:hover{
+    background-color: var(--coklat);
+    color: white;
+}
+
+.home{
+    background-image: url(img/bg.jpg);
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    
+}
+
+.font1{
+    font-family: 'Tangerine';
+    font-size: 4rem;
+    color: #98683d;
+}
+
+.home p {
+    font-size: 1.4rem;
+}
+
+
+
+.font2 {
+    font-family: 'Tangerine';
+    font-size: 3.3rem;
+    color: #98683d;
+}
+
+.font3 {
+    font-size: 1.4rem;
+}
+
+.font4  {
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.font5 {
+    font-weight: bold;
+    color: #98683d;
+}
+
+.mantra {
+    font-style: italic;
+}
+
+.info {
+    background-color: var(--bg);
+    color: white;
+    margin-top: -6rem;
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+    font-size: 1.4rem;
+}
+
+.info a {
+    font-size: 1.4rem;
+    background-color: #e1a978;
+}
+
+
+.font6{
+    font-family: 'Tangerine';
+    font-size: 4rem;
+    color:#e4b68e;
+}
+
+.font7 {
+    font-family: 'Playfair Display';
+    font-size: 2.5rem;
+    color:#e4b68e;
+}
+
+.penutup {
+    padding-top: 35rem;
+    padding-bottom: 2rem;
+}
+
+.penutup h2{
+    font-family: 'Tangerine';
+    font-size: 4rem;
+}
+
+.mynavbar{
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter:  blur(4px);
+
+}
+
+.mynavbar .offcanvas {
+    height: 101vh;
+    width: 30vh;
+}
+
+.mynavbar .navbar-brand, 
+.mynavbar .offcanvas-title {
+    font-family: 'Tangerine';
+    font-size: 3.2rem;
+    color: #98683d;
+    font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
+footer{
+    padding: 3rem;
+    padding-bottom: 0.5rem;
+    background-color: #b18667;
+    color: white;
+}
+
+footer a {
+    color: #0a0a0a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: white;
+    
+}
+
+footer li {
+    list-style: none;
+    display: inline;
+    margin: 0.5rem;
+}
+
+footer p {
+    font-family: 'Tangerine';
+    font-size: 3rem;
+}
+
+.audio-icon-wrapper {
+    width: 4rem;
+    height: 4rem;
+    font-size: 4rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+
+
+
+@keyframes rotating {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+    
+}
+
+/* Media Query */
+
+/* Laptop */
+@media(max-width: 992px){
+    html{
+        font-size: 75%;
+    }
+
+    .simply-countdown > .simply-section {
+        padding: 70px;
+    }
+
+    .home img {
+        width: 60%;
+        max-width: 400px;
+        height: auto;
+      }
+
+}
+
+/* Tab */
+@media(max-width: 768px){
+    html{
+        font-size: 75%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 60px;
+        margin: 5px;
+    }
+
+    .mynavbar .nav-link {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .sticky-top {
+        overflow: hidden;
+    }
+
+    .home img {
+        width: 55%;
+        max-width: 400px;
+        height: auto;
+      }
+
+
+}
+
+
+
+/* Phone */
+@media(max-width: 550px){
+    html{
+        font-size: 59%;
+    }
+    .simply-countdown > .simply-section {
+        padding: 30px;
+        margin: 3px;
+    }
+
+    .home img {
+        width: 40%;
+        max-width: 400px;
+        height: auto;
+      }
+
+
+}
